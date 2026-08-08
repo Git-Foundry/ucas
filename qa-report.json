@@ -1,0 +1,263 @@
+{
+  "iterations": [
+    {
+      "iteration": 1,
+      "findings": [
+        {
+          "file": "404.html",
+          "severity": "major",
+          "antipattern": "overused-font",
+          "issue": "Overused font: Primary font: arial",
+          "fix": "Inter, Roboto, Fraunces, Geist, Plus Jakarta Sans, and Space Grotesk are used on so many sites they no longer feel distinctive. Each new wave of AI-generated UIs converges on the same handful of faces. Choose a face that gives your interface personality.",
+          "source": "detector"
+        },
+        {
+          "file": "styles.css",
+          "severity": "major",
+          "antipattern": "low-contrast",
+          "issue": "Low contrast text (used on index.html): 1.0:1 (need 4.5:1) — text #2d3748 on #2d3748",
+          "fix": "Text does not meet WCAG AA contrast requirements (4.5:1 for body, 3:1 for large text). Increase the contrast between text and background.",
+          "source": "detector"
+        },
+        {
+          "file": "styles.css",
+          "severity": "major",
+          "antipattern": "low-contrast",
+          "issue": "Low contrast text (used on index.html): 4.0:1 (need 4.5:1) — text #718096 on #ffffff",
+          "fix": "Text does not meet WCAG AA contrast requirements (4.5:1 for body, 3:1 for large text). Increase the contrast between text and background.",
+          "source": "detector"
+        },
+        {
+          "file": "styles.css",
+          "severity": "major",
+          "antipattern": "low-contrast",
+          "issue": "Low contrast text (used on index.html): 3.8:1 (need 4.5:1) — text #718096 on #f7f8fa",
+          "fix": "Text does not meet WCAG AA contrast requirements (4.5:1 for body, 3:1 for large text). Increase the contrast between text and background.",
+          "source": "detector"
+        },
+        {
+          "file": "index.html",
+          "severity": "major",
+          "antipattern": "cramped-padding",
+          "issue": "Cramped padding: <section> \"problem-solution\": children flush against bg on all sides (no inset)",
+          "fix": "Text is too close to the edge of its container. Two shapes: (1) an element with its own text where the padding is too low for the font size, and (2) a wrapper with text-bearing children and near-zero padding against a visible boundary (border, outline, or non-transparent background) — children land flush against the boundary line. Add at least 8px (ideally 12–16px) of padding inside bordered, outlined, or colored containers.",
+          "source": "detector"
+        },
+        {
+          "file": "index.html",
+          "severity": "major",
+          "antipattern": "cramped-padding",
+          "issue": "Cramped padding: <div> \"problem-solution__problem\": children flush against border on top/right/left (no inset)",
+          "fix": "Text is too close to the edge of its container. Two shapes: (1) an element with its own text where the padding is too low for the font size, and (2) a wrapper with text-bearing children and near-zero padding against a visible boundary (border, outline, or non-transparent background) — children land flush against the boundary line. Add at least 8px (ideally 12–16px) of padding inside bordered, outlined, or colored containers.",
+          "source": "detector"
+        },
+        {
+          "file": "index.html",
+          "severity": "major",
+          "antipattern": "cramped-padding",
+          "issue": "Cramped padding: <div> \"problem-solution__answer\": children flush against border+bg on top/right/left (no inset)",
+          "fix": "Text is too close to the edge of its container. Two shapes: (1) an element with its own text where the padding is too low for the font size, and (2) a wrapper with text-bearing children and near-zero padding against a visible boundary (border, outline, or non-transparent background) — children land flush against the boundary line. Add at least 8px (ideally 12–16px) of padding inside bordered, outlined, or colored containers.",
+          "source": "detector"
+        },
+        {
+          "file": "index.html",
+          "severity": "major",
+          "antipattern": "cramped-padding",
+          "issue": "Cramped padding: <section> \"traction\": children flush against bg on all sides (no inset)",
+          "fix": "Text is too close to the edge of its container. Two shapes: (1) an element with its own text where the padding is too low for the font size, and (2) a wrapper with text-bearing children and near-zero padding against a visible boundary (border, outline, or non-transparent background) — children land flush against the boundary line. Add at least 8px (ideally 12–16px) of padding inside bordered, outlined, or colored containers.",
+          "source": "detector"
+        },
+        {
+          "file": "index.html",
+          "severity": "major",
+          "antipattern": "cramped-padding",
+          "issue": "Cramped padding: <div> \"traction-item\": children flush against border-right on right (no inset)",
+          "fix": "Text is too close to the edge of its container. Two shapes: (1) an element with its own text where the padding is too low for the font size, and (2) a wrapper with text-bearing children and near-zero padding against a visible boundary (border, outline, or non-transparent background) — children land flush against the boundary line. Add at least 8px (ideally 12–16px) of padding inside bordered, outlined, or colored containers.",
+          "source": "detector"
+        },
+        {
+          "file": "index.html",
+          "severity": "major",
+          "antipattern": "cramped-padding",
+          "issue": "Cramped padding: <section> \"founder-story\": children flush against border-top/bottom+bg on all sides (no inset)",
+          "fix": "Text is too close to the edge of its container. Two shapes: (1) an element with its own text where the padding is too low for the font size, and (2) a wrapper with text-bearing children and near-zero padding against a visible boundary (border, outline, or non-transparent background) — children land flush against the boundary line. Add at least 8px (ideally 12–16px) of padding inside bordered, outlined, or colored containers.",
+          "source": "detector"
+        },
+        {
+          "file": "index.html",
+          "severity": "major",
+          "antipattern": "cramped-padding",
+          "issue": "Cramped padding: <section> \"cta-banner\": children flush against bg on all sides (no inset)",
+          "fix": "Text is too close to the edge of its container. Two shapes: (1) an element with its own text where the padding is too low for the font size, and (2) a wrapper with text-bearing children and near-zero padding against a visible boundary (border, outline, or non-transparent background) — children land flush against the boundary line. Add at least 8px (ideally 12–16px) of padding inside bordered, outlined, or colored containers.",
+          "source": "detector"
+        },
+        {
+          "file": "index.html",
+          "severity": "major",
+          "antipattern": "overused-font",
+          "issue": "Overused font: Primary font: plus jakarta sans",
+          "fix": "Inter, Roboto, Fraunces, Geist, Plus Jakarta Sans, and Space Grotesk are used on so many sites they no longer feel distinctive. Each new wave of AI-generated UIs converges on the same handful of faces. Choose a face that gives your interface personality.",
+          "source": "detector"
+        },
+        {
+          "file": "index.html",
+          "severity": "major",
+          "antipattern": "single-font",
+          "issue": "Single font for everything: only font used is plus jakarta sans",
+          "fix": "Only one font family is used for the entire page. Pair a distinctive display font with a refined body font to create typographic hierarchy.",
+          "source": "detector"
+        },
+        {
+          "file": "index.html",
+          "severity": "major",
+          "antipattern": "flat-type-hierarchy",
+          "issue": "Flat type hierarchy: Sizes: 12.5px, 13.1px, 14.1px, 14.4px, 15.2px, 15.6px, 15.7px, 16px, 16.3px, 16.8px, 17.3px, 18.9px, 19.2px (ratio 1.5:1)",
+          "fix": "Font sizes are too close together — no clear visual hierarchy. Use fewer sizes with more contrast (aim for at least a 1.25 ratio between steps).",
+          "source": "detector"
+        },
+        {
+          "file": "index.html",
+          "severity": "major",
+          "antipattern": "em-dash-overuse",
+          "issue": "Em-dash overuse: 6 em-dashes in body text",
+          "fix": "More than two em-dashes (— or --) in body copy is an AI cadence tell. Use commas, colons, periods, or parentheses instead.",
+          "source": "detector"
+        },
+        {
+          "file": "index.html",
+          "severity": "minor",
+          "antipattern": "numbered-section-markers",
+          "issue": "Numbered section markers (01 / 02 / 03): Sequence: 01, 02, 03, 04",
+          "fix": "Numbered display markers as section labels (01, 02, 03) are the AI editorial scaffold one tier deeper than tracked eyebrow chips. If you find yourself reaching for them, choose a different section cadence.",
+          "source": "detector"
+        }
+      ]
+    },
+    {
+      "iteration": 2,
+      "findings": [
+        {
+          "file": "styles.css",
+          "severity": "major",
+          "antipattern": "low-contrast",
+          "issue": "Low contrast text (used on index.html): 1.0:1 (need 4.5:1) — text #2d3748 on #2d3748",
+          "fix": "Text does not meet WCAG AA contrast requirements (4.5:1 for body, 3:1 for large text). Increase the contrast between text and background.",
+          "source": "detector"
+        },
+        {
+          "file": "styles.css",
+          "severity": "major",
+          "antipattern": "low-contrast",
+          "issue": "Low contrast text (used on index.html): 4.0:1 (need 4.5:1) — text #718096 on #ffffff",
+          "fix": "Text does not meet WCAG AA contrast requirements (4.5:1 for body, 3:1 for large text). Increase the contrast between text and background.",
+          "source": "detector"
+        },
+        {
+          "file": "styles.css",
+          "severity": "major",
+          "antipattern": "low-contrast",
+          "issue": "Low contrast text (used on index.html): 3.8:1 (need 4.5:1) — text #718096 on #f7f8fa",
+          "fix": "Text does not meet WCAG AA contrast requirements (4.5:1 for body, 3:1 for large text). Increase the contrast between text and background.",
+          "source": "detector"
+        },
+        {
+          "file": "index.html",
+          "severity": "major",
+          "antipattern": "cramped-padding",
+          "issue": "Cramped padding: <section> \"problem-solution\": children flush against bg on all sides (no inset)",
+          "fix": "Text is too close to the edge of its container. Two shapes: (1) an element with its own text where the padding is too low for the font size, and (2) a wrapper with text-bearing children and near-zero padding against a visible boundary (border, outline, or non-transparent background) — children land flush against the boundary line. Add at least 8px (ideally 12–16px) of padding inside bordered, outlined, or colored containers.",
+          "source": "detector"
+        },
+        {
+          "file": "index.html",
+          "severity": "major",
+          "antipattern": "cramped-padding",
+          "issue": "Cramped padding: <div> \"problem-solution__problem\": children flush against border on top/right/left (no inset)",
+          "fix": "Text is too close to the edge of its container. Two shapes: (1) an element with its own text where the padding is too low for the font size, and (2) a wrapper with text-bearing children and near-zero padding against a visible boundary (border, outline, or non-transparent background) — children land flush against the boundary line. Add at least 8px (ideally 12–16px) of padding inside bordered, outlined, or colored containers.",
+          "source": "detector"
+        },
+        {
+          "file": "index.html",
+          "severity": "major",
+          "antipattern": "cramped-padding",
+          "issue": "Cramped padding: <div> \"problem-solution__answer\": children flush against border+bg on top/right/left (no inset)",
+          "fix": "Text is too close to the edge of its container. Two shapes: (1) an element with its own text where the padding is too low for the font size, and (2) a wrapper with text-bearing children and near-zero padding against a visible boundary (border, outline, or non-transparent background) — children land flush against the boundary line. Add at least 8px (ideally 12–16px) of padding inside bordered, outlined, or colored containers.",
+          "source": "detector"
+        },
+        {
+          "file": "index.html",
+          "severity": "major",
+          "antipattern": "cramped-padding",
+          "issue": "Cramped padding: <section> \"traction\": children flush against bg on all sides (no inset)",
+          "fix": "Text is too close to the edge of its container. Two shapes: (1) an element with its own text where the padding is too low for the font size, and (2) a wrapper with text-bearing children and near-zero padding against a visible boundary (border, outline, or non-transparent background) — children land flush against the boundary line. Add at least 8px (ideally 12–16px) of padding inside bordered, outlined, or colored containers.",
+          "source": "detector"
+        },
+        {
+          "file": "index.html",
+          "severity": "major",
+          "antipattern": "cramped-padding",
+          "issue": "Cramped padding: <div> \"traction-item\": children flush against border-right on right (no inset)",
+          "fix": "Text is too close to the edge of its container. Two shapes: (1) an element with its own text where the padding is too low for the font size, and (2) a wrapper with text-bearing children and near-zero padding against a visible boundary (border, outline, or non-transparent background) — children land flush against the boundary line. Add at least 8px (ideally 12–16px) of padding inside bordered, outlined, or colored containers.",
+          "source": "detector"
+        },
+        {
+          "file": "index.html",
+          "severity": "major",
+          "antipattern": "cramped-padding",
+          "issue": "Cramped padding: <section> \"founder-story\": children flush against border-top/bottom+bg on all sides (no inset)",
+          "fix": "Text is too close to the edge of its container. Two shapes: (1) an element with its own text where the padding is too low for the font size, and (2) a wrapper with text-bearing children and near-zero padding against a visible boundary (border, outline, or non-transparent background) — children land flush against the boundary line. Add at least 8px (ideally 12–16px) of padding inside bordered, outlined, or colored containers.",
+          "source": "detector"
+        },
+        {
+          "file": "index.html",
+          "severity": "major",
+          "antipattern": "cramped-padding",
+          "issue": "Cramped padding: <section> \"cta-banner\": children flush against bg on all sides (no inset)",
+          "fix": "Text is too close to the edge of its container. Two shapes: (1) an element with its own text where the padding is too low for the font size, and (2) a wrapper with text-bearing children and near-zero padding against a visible boundary (border, outline, or non-transparent background) — children land flush against the boundary line. Add at least 8px (ideally 12–16px) of padding inside bordered, outlined, or colored containers.",
+          "source": "detector"
+        },
+        {
+          "file": "index.html",
+          "severity": "major",
+          "antipattern": "overused-font",
+          "issue": "Overused font: Primary font: plus jakarta sans",
+          "fix": "Inter, Roboto, Fraunces, Geist, Plus Jakarta Sans, and Space Grotesk are used on so many sites they no longer feel distinctive. Each new wave of AI-generated UIs converges on the same handful of faces. Choose a face that gives your interface personality.",
+          "source": "detector"
+        },
+        {
+          "file": "index.html",
+          "severity": "major",
+          "antipattern": "single-font",
+          "issue": "Single font for everything: only font used is plus jakarta sans",
+          "fix": "Only one font family is used for the entire page. Pair a distinctive display font with a refined body font to create typographic hierarchy.",
+          "source": "detector"
+        },
+        {
+          "file": "index.html",
+          "severity": "major",
+          "antipattern": "flat-type-hierarchy",
+          "issue": "Flat type hierarchy: Sizes: 12.5px, 13.1px, 14.1px, 14.4px, 14.7px, 15.2px, 15.6px, 15.7px, 16px, 16.3px, 16.8px, 17.3px, 18.9px, 19.2px (ratio 1.5:1)",
+          "fix": "Font sizes are too close together — no clear visual hierarchy. Use fewer sizes with more contrast (aim for at least a 1.25 ratio between steps).",
+          "source": "detector"
+        },
+        {
+          "file": "index.html",
+          "severity": "major",
+          "antipattern": "skipped-heading",
+          "issue": "Skipped heading level: <h2> \"Let's connect\" followed by <h4> \"Company\" (missing h3)",
+          "fix": "Heading levels should not skip (e.g. h1 then h3 with no h2). Screen readers use heading hierarchy for navigation. Skipping levels breaks the document outline.",
+          "source": "detector"
+        },
+        {
+          "file": "index.html",
+          "severity": "minor",
+          "antipattern": "numbered-section-markers",
+          "issue": "Numbered section markers (01 / 02 / 03): Sequence: 01, 02, 03, 04",
+          "fix": "Numbered display markers as section labels (01, 02, 03) are the AI editorial scaffold one tier deeper than tracked eyebrow chips. If you find yourself reaching for them, choose a different section cadence.",
+          "source": "detector"
+        }
+      ]
+    }
+  ],
+  "generated": "2026-08-08T22:01:17.844Z"
+}
