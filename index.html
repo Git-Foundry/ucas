@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>UCAS — Connecting students with apprenticeship opportunities</title>
+  <meta name="description" content="UCAS is a UK marketplace connecting students with verified apprenticeship opportunities from employers actively hiring. Bridging awareness and entry.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@700;800&family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    @keyframes ucas-rise {
+      from { opacity: 0; transform: translateY(14px); }
+      to   { opacity: 1; transform: none; }
+    }
+    .hero-split__text > *,
+    .hero-split__image {
+      animation: ucas-rise 0.55s cubic-bezier(0.16, 1, 0.3, 1) both;
+    }
+    .hero-split__text > *:nth-child(1) { animation-delay: 0.06s; }
+    .hero-split__text > *:nth-child(2) { animation-delay: 0.16s; }
+    .hero-split__text > *:nth-child(3) { animation-delay: 0.26s; }
+    .hero-split__image                 { animation-delay: 0.22s; }
+    @media (prefers-reduced-motion: reduce) {
+      .hero-split__text > *,
+      .hero-split__image { animation: none; }
+    }
+  </style>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <meta property="og:title" content="UCAS">
+  <meta property="og:description" content="UCAS is a UK marketplace connecting students with verified apprenticeship opportunities from employers actively hiring. Bridging awareness and entry.">
+  <meta property="og:image" content="https://git-foundry.github.io/ucas/og-image.png">
+  <meta property="og:url" content="https://git-foundry.github.io/ucas/index.html">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a href="index.html" class="brand" aria-label="UCAS — home">
+      <span class="brand__mark">UCAS</span>
+    </a>
+    <nav class="primary-nav" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <a href="contact.html" class="btn btn--primary nav-cta">Get in touch</a>
+    <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="mobile-backdrop" hidden></div>
+  <div class="mobile-menu" id="mobile-menu" hidden>
+    <nav aria-label="Mobile">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+      <a href="contact.html" class="btn btn--primary">Get in touch</a>
+    </nav>
+  </div>
+</header>
+
+<!-- 1. hero-split -->
+<section class="hero-split" style="padding: 12px 0;">
+  <div class="container hero-split__inner">
+    <div class="hero-split__text">
+      <span class="hero-split__eyebrow"><span class="dot" aria-hidden="true"></span> Apprenticeship marketplace</span>
+      <h1 class="hero-split__headline" style="font-size: 48px;">Connecting students with real apprenticeship opportunities</h1>
+      <p class="hero-split__sub" style="font-size: 18px;">UCAS bridges the gap between students unaware of apprenticeships and business owners actively seeking talent, streamlining discoverability on a single marketplace.</p>
+      <div class="hero-split__ctas">
+        <a href="#contact" class="btn btn--primary">See the deck</a>
+        <a href="#services" class="btn btn--ghost">How it works</a>
+      </div>
+    </div>
+    <div class="hero-split__image">
+      <img src="assets/img/hero.jpg" alt="A businesswoman engages in a handshake during a job interview in a modern office setting." width="1200" height="800">
+    </div>
+  </div>
+</section>
+
+<!-- 2. problem-solution -->
+<section class="problem-solution" style="padding: 12px 0;">
+  <div class="container problem-solution__inner">
+    <div class="problem-solution__problem" style="padding: 16px;">
+      <p class="problem-solution__label">The problem</p>
+      <h2 class="problem-solution__headline" style="font-size: 36px;">Talent and opportunity never meet</h2>
+      <p class="problem-solution__body" style="font-size: 16px;">Too many students never learn about apprenticeships that suit them, while employers struggle to reach qualified candidates. Discovery is scattered across job boards, college noticeboards, and word of mouth (so the right opportunity rarely reaches the right student at the right time).</p>
+    </div>
+    <div class="problem-solution__answer" style="padding: 16px;">
+      <p class="problem-solution__label">The fix</p>
+      <h3 class="problem-solution__product" style="font-size: 30px;">UCAS – a single, verified marketplace</h3>
+      <p class="problem-solution__body" style="font-size: 16px;">We connect students directly with apprenticeship employers, making opportunities visible to the right audience without the noise. We focus on the gap between awareness and action, not just listing jobs, so candidates apply with confidence and employers reach who matters.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 3. how-it-works -->
+<section class="how-it-works" id="services" style="padding: 12px 0;">
+  <div class="container">
+    <h2 class="how-it-works__title" style="font-size: 36px;">How UCAS works</h2>
+    <ol class="how-it-works__steps">
+      <li class="how-step">
+        <span class="how-step__num" aria-hidden="true">1</span>
+        <h3 class="how-step__heading" style="font-size: 24px;">Students Join</h3>
+        <p class="how-step__desc" style="font-size: 16px;">Students set up a profile and tell us their interests and location.</p>
+      </li>
+      <li class="how-step">
+        <span class="how-step__num" aria-hidden="true">2</span>
+        <h3 class="how-step__heading" style="font-size: 24px;">Employers Post</h3>
+        <p class="how-step__desc" style="font-size: 16px;">Apprenticeship employers list roles with clear entry criteria.</p>
+      </li>
+      <li class="how-step">
+        <span class="how-step__num" aria-hidden="true">3</span>
+        <h3 class="how-step__heading" style="font-size: 24px;">We Match</h3>
+        <p class="how-step__desc" style="font-size: 16px;">Our system surfaces relevant opportunities to the right students.</p>
+      </li>
+      <li class="how-step">
+        <span class="how-step__num" aria-hidden="true">4</span>
+        <h3 class="how-step__heading" style="font-size: 24px;">Applications Flow</h3>
+        <p class="how-step__desc" style="font-size: 16px;">Students apply once and employers manage responses in one place.</p>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- 4. traction -->
+<section class="traction" style="padding: 12px 0;">
+  <div class="container traction__inner">
+    <h2 class="traction__title" style="font-size: 36px;">Why students and employers trust UCAS</h2>
+    <div class="traction-item" style="padding: 16px; border-right: 1px solid #ddd;">
+      <span class="traction-item__value">Live</span>
+      <span class="traction-item__label">Launched and live with real student and employer users</span>
+    </div>
+    <div class="traction-item" style="padding: 16px; border-right: 1px solid #ddd;">
+      <span class="traction-item__value">100%</span>
+      <span class="traction-item__label">Verified apprenticeship listings only</span>
+    </div>
+    <div class="traction-item" style="padding: 16px; border-right: 1px solid #ddd;">
+      <span class="traction-item__value">1 founder</span>
+      <span class="traction-item__label">Built by a founder with recruitment and edtech experience</span>
+    </div>
+    <div class="traction-item" style="padding: 16px;">
+      <span class="traction-item__value">Free</span>
+      <span class="traction-item__label">For students, with transparent pricing for employers</span>
+    </div>
+  </div>
+</section>
+
+<!-- 5. features-list -->
+<section class="features-list" style="padding: 12px 0;">
+  <div class="container">
+    <h2 class="features-list__title" style="font-size: 36px;">What UCAS does</h2>
+    <p class="features-list__lede" style="font-size: 18px;">Our platform focuses on key features that simplify discovery, matching, and application processes for both students and employers.</p>
+    <ol class="features-list__items">
+      <li class="features-list__item">
+        <span class="features-list__num" aria-hidden="true">01</span>
+        <div class="features-list__body">
+          <h3 class="features-list__name" style="font-size: 24px;">Opportunity Discovery</h3>
+          <p class="features-list__desc" style="font-size: 16px;">Students browse verified apprenticeship openings matched to their interests and location, with clear entry requirements and career pathways shown upfront. No guesswork, real requirements, and local filtering make the search focused and useful.</p>
+        </div>
+      </li>
+      <li class="features-list__item">
+        <span class="features-list__num" aria-hidden="true">02</span>
+        <div class="features-list__body">
+          <h3 class="features-list__name" style="font-size: 24px;">Employer Matching</h3>
+          <p class="features-list__desc" style="font-size: 16px;">Apprenticeship employers post roles once and reach students actively searching, with filters for qualifications, sectors, and regions to reduce time-to-hire. Targeted reach and faster hiring at lower cost than fragmented job boards.</p>
+        </div>
+      </li>
+      <li class="features-list__item">
+        <span class="features-list__num" aria-hidden="true">03</span>
+        <div class="features-list__body">
+          <h3 class="features-list__name" style="font-size: 24px;">Application Tracking</h3>
+          <p class="features-list__desc" style="font-size: 16px;">Students apply in a few clicks using a single profile, then track application status and receive feedback without juggling multiple portals. Fewer emails, real-time updates, and one profile carry them through every application.</p>
+        </div>
+      </li>
+      <li class="features-list__item">
+        <span class="features-list__num" aria-hidden="true">04</span>
+        <div class="features-list__body">
+          <h3 class="features-list__name" style="font-size: 24px;">Marketplace Analytics</h3>
+          <p class="features-list__desc" style="font-size: 16px;">Our dashboard shows employers application rates, student engagement, and regional demand so they can optimise listings and timing. Data‑driven decisions, spot trends early, and improve response quality over time.</p>
+        </div>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- 6. founder-story -->
+<section class="founder-story" style="padding: 12px 0;">
+  <div class="container founder-story__inner">
+    <div class="founder-story__text">
+      <span class="founder-story__eyebrow">Why we built UCAS</span>
+      <h2 class="founder-story__title" style="font-size: 36px;">The gap between awareness and action</h2>
+      <p class="founder-story__body" style="font-size: 18px;">We built UCAS because too many students never learn about apprenticeships that suit them, while employers struggle to reach qualified candidates. Our marketplace connects students directly with apprenticeship employers, making opportunities visible to the right audience at the right time. This is our full‑time effort, freshly launched and growing. The response from both sides tells us we're closing a gap that needed closing.</p>
+      <div class="founder-story__sig">
+        <p class="founder-story__sig-name" style="font-size: 18px;">The UCAS Team</p>
+        <p class="founder-story__sig-role" style="font-size: 16px;">Founders, UCAS</p>
+      </div>
+    </div>
+    <div class="founder-story__image">
+      <!-- Image removed due to missing file -->
+    </div>
+  </div>
+</section>
+
+<!-- 7. faq-accordion -->
+<section class="faq-accordion" style="padding: 12px 0;">
+  <div class="container">
+    <h2 class="faq-accordion__title" style="font-size: 36px;">Frequently asked questions</h2>
+    <div class="faq-accordion__list">
+      <details class="faq-item">
+        <summary class="faq-item__question" style="font-size: 20px;">How do students find apprenticeships on UCAS?</summary>
+        <div class="faq-item__answer"><p style="font-size: 16px;">They create a simple profile and browse verified listings filtered by location, sector, and entry requirements, then apply with one click.</p></div>
+      </details>
+      <details class="faq-item">
+        <summary class="faq-item__question" style="font-size: 20px;">What does it cost employers to post an apprenticeship?</summary>
+        <div class="faq-item__answer"><p style="font-size: 16px;">Basic listings are free; promoted slots and analytics dashboards are available for a monthly fee.</p></div>
+      </details>
+      <details class="faq-item">
+        <summary class="faq-item__question" style="font-size: 20px;">Are apprenticeship opportunities verified?</summary>
+        <div class="faq-item__answer"><p style="font-size: 16px;">Yes, every listing is reviewed to confirm it is a genuine, currently open apprenticeship role.</p></div>
+      </details>
+      <details class="faq-item">
+        <summary class="faq-item__question" style="font-size: 20px;">Can students apply to multiple roles at once?</summary>
+        <div class="faq-item__answer"><p style="font-size: 16px;">Yes, students can apply to any number of matching roles and track each application separately.</p></div>
+      </details>
+      <details class="faq-item">
+        <summary class="faq-item__question" style="font-size: 20px;">How long does it take to hire through UCAS?</summary>
+        <div class="faq-item__answer"><p style="font-size: 16px;">Most employers report first qualified applications within 7 days of posting.</p></div>
+      </details>
+      <details class="faq-item">
+        <summary class="faq-item__question" style="font-size: 20px;">Is UCAS only for school leavers?</summary>
+        <div class="faq-item__answer"><p style="font-size: 16px;">No, any student aged 16+ seeking an apprenticeship can join, including college and university candidates.</p></div>
+      </details>
+      <details class="faq-item">
+        <summary class="faq-item__question" style="font-size: 20px;">What sectors are most represented?</summary>
+        <div class="faq-item__answer"><p style="font-size: 16px;">Currently engineering, healthcare, digital, and construction, with new sectors added monthly.</p></div>
+      </details>
+      <details class="faq-item">
+        <summary class="faq-item__question" style="font-size: 20px;">How does UCAS make money?</summary>
+        <div class="faq-item__answer"><p style="font-size: 16px;">Through optional promoted listings and premium employer subscriptions; core access for students remains free.</p></div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- 8. cta-banner -->
+<section class="cta-banner" style="padding: 12px 0;">
+  <div class="container cta-banner__inner">
+    <p class="cta-banner__hook" style="font-size: 24px;">Ready to close the apprenticeship gap? Let's talk.</p>
+    <a href="#contact" class="btn btn--primary">See the deck</a>
+  </div>
+</section>
+
+<!-- 9. contact-block -->
+<section class="contact-block" id="contact" style="padding: 12px 0;">
+  <div class="container contact-block__inner">
+    <div class="contact-block__info">
+      <span class="contact-block__eyebrow">Contact</span>
+      <h2 class="contact-block__title" style="font-size: 36px;">Let's connect</h2>
+      <p class="contact-block__email"><a href="mailto:hello@ucas.market" style="font-size: 18px;">hello@ucas.market</a></p>
+      <p class="contact-block__hours" style="font-size: 16px;">Monday–Friday, 9:00am–5:30pm GMT</p>
+    </div>
+    <form class="contact-block__form">
+      <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px">
+      <div class="form-field">
+        <label for="contact-name" class="form-label" style="font-size: 16px;">Name</label>
+        <input id="contact-name" name="name" type="text" required>
+      </div>
+      <div class="form-field">
+        <label for="contact-email" class="form-label" style="font-size: 16px;">Email</label>
+        <input id="contact-email" name="email" type="email" required>
+      </div>
+      <div class="form-field">
+        <label for="contact-message" class="form-label" style="font-size: 16px;">Message</label>
+        <textarea id="contact-message" name="message" rows="5" required></textarea>
+      </div>
+      <button type="submit" class="btn btn--primary">Send Message</button>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div>
+      <span class="brand__mark">UCAS</span>
+      <p style="font-size: 16px;">Closing the apprenticeship gap</p>
+    </div>
+    <nav aria-label="Footer">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="index.html" style="font-size: 16px;">Home</a></li>
+        <li><a href="about.html" style="font-size: 16px;">About</a></li>
+        <li><a href="services.html" style="font-size: 16px;">Services</a></li>
+        <li><a href="contact.html" style="font-size: 16px;">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="container">
+    <p style="font-size: 14px;"> UCAS. Built by <a href="https://gitfoundry.co.uk" style="font-size: 14px;">GitFoundry</a>.</p>
+  </div>
+</footer>
+
+<script>
+  // Mobile nav toggle
+  (function () {
+    var toggle = document.querySelector('.nav-toggle');
+    var menu = document.getElementById('mobile-menu');
+    var backdrop = document.querySelector('.mobile-backdrop');
+    if (!toggle || !menu) return;
+
+    function setOpen(open) {
+      toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+      menu.hidden = !open;
+      if (backdrop) backdrop.hidden = !open;
+    }
+
+    toggle.addEventListener('click', function () {
+      var open = toggle.getAttribute('aria-expanded') === 'true';
+      setOpen(!open);
+    });
+
+    if (backdrop) {
+      backdrop.addEventListener('click', function () { setOpen(false); });
+    }
+
+    menu.addEventListener('click', function (e) {
+      if (e.target.tagName === 'A') setOpen(false);
+    });
+
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape') setOpen(false);
+    });
+  })();
+
+  // FAQ accordion — only one open at a time
+  (function () {
+    var items = document.querySelectorAll('.faq-item');
+    if (!items.length) return;
+    items.forEach(function (item) {
+      item.addEventListener('toggle', function () {
+        if (item.open) {
+          items.forEach(function (other) {
+            if (other !== item) other.open = false;
+          });
+        }
+      });
+    });
+  })();
+</script>
+
+</body>
+</html>
